@@ -5,14 +5,13 @@
             <div class="panel-heading">
             <div class="row">
                 <div class="col-xs-12">
-                    <h2 class="h2 display-4">Contact Name</h2>
+                    <h2 class="h2 display-4">{{ contact.name }}</h2>
+                    <span class="pull-left">
+                        <img src="{{ contact.imageUrl }}" alt="{{ contact.name }}" class="img-responsive" style="max-height: 150px;">
+                    </span>
                 </div>
-            </div>
-            <div class="row align-items-center">
                 <div class="col-xs-6 text-right d-flex justify-content-beginning">
                     <img src="" alt="" class="img-responsive" style="max-height: 150px;">
-                </div>
-                <div class="col-xs-6 text-right d-flex justify-content-end align-items-center" style="margin-top: 60px">
                     <div class="btn-toolbar" style="display: flex; align-items: center;">
                         <div class="btn-group mr-2" role="group">
                             <button type="button" class="btn btn-primary">Edit</button>
@@ -23,19 +22,19 @@
                     </div>
                 </div>
             </div>
+            <div class="row align-items-center">
+                
+            </div>
             <div class="panel-body">
             <div class="row">
                 <div class="col-xs-12">
                 <a href="#" class="list-group-item clearfix">
                     <div class="pull-left">
-                        <h3 class="list-group-item-heading"><strong>Email:</strong> </h3>
-                        <h3 class="list-group-item-heading"><strong>Phone:</strong> </h3>
+                        <h3 class="list-group-item-heading"><strong>Email:</strong> {{ contact.email }} </h3>
+                        <h3 class="list-group-item-heading"><strong>Phone:</strong> {{ contact.phone }} </h3>
                     </div>
-                    <span class="pull-right">
-                    <img src="" alt="" class="img-responsive" style="max-height: 50px;">
-                    </span>
                 </a>
-                <!-- <cms-contact-item></cms-contact-item> -->
+                <cms-contact-item></cms-contact-item>
                 </div>
             </div>
             </div>
