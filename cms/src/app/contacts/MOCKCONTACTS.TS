@@ -119,6 +119,14 @@ export const MOCKCONTACTS: Contact[] = [
     imageUrl: '../../assets/images/thompsonda.jpg',
     group: null
   },
+  {
+    id: '99',
+    name: 'PK',
+    email: 'barzeer@byui.edu',
+    phone: '208-496-3768',
+    imageUrl: '../../assets/images/barzeer.jpg',
+    group: null
+   },
 
   // teams
   // index 13
@@ -278,14 +286,4 @@ export const MOCKCONTACTS: Contact[] = [
     }
   ]
   },
-
-  // Me
-  {
-   id: '99',
-    name: 'Sam Soto',
-    email: 'barzeer@byui.edu',
-    phone: '208-496-3768',
-    imageUrl: '../../assets/images/barzeer.jpg',
-    group: null
-  }
 ];

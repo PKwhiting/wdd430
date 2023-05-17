@@ -20,11 +20,12 @@ export class ContactService {
   }
 
   getContact(id: string): Contact {
-    return this.contacts.find((contact) => contact.id === id);
-    // return this.contacts.find(contact => {
-    //     console.log(contact.id)
-    //     return contact.id === id;
-    // });
+    if (/\d/.test(id)){
+      return this.contacts.find((contact) => contact.id === id);
+    }
+    else {
+      return this.contacts.find((contact) => contact.name === id);
+    }
 }
 
 
